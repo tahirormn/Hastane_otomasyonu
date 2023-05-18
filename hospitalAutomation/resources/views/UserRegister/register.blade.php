@@ -14,37 +14,37 @@
 
 
     <h2>Kayıt Ol</h2>
-    <form>
+    <form action="{{route("register")}}" method="post">
+        @csrf
         <div class="user-box">
-            <input type="text" name=""    required="">
+            <input type="text" name="name"    required="">
             <label>Adınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name=""    required="">
+            <input type="text" name="surname"    required="">
             <label>Soyadınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name="" maxlength="11"   required="">
+            <input type="text" name="tc_identity" maxlength="11"   required="">
             <label>TC KİMLİK NUMARANIZ</label>
         </div>
         <div class="user-box">
-            <input type="text" name=""    required="">
+            <input type="text" name="birthplace"    required="">
             <label> Doğum yeri</label>
         </div>
         <div class="user-box" style="color: #fff;">
 
             Doğum tarihi:
-            <input type="date"> <br />
+            <input type="date" name="birthdate"> <br />
 
         </div>
 
 
 
 
-        <div class="user-box">
-
+     <!--   <div class="user-box">
             <label>Kan Grubu</label> <br> <br>
-            <select name="kangrubu" size="1"> <br>
+            <select name="blood_id" size="1"> <br>
 
                 <option value="A">A Rh+</option>
                 <option value="B">A Rh-</option>
@@ -58,24 +58,26 @@
             </select> <br> <br>
 
 
-        </div>
+        </div> -->
         <div class="user-box">
-            <input type="tel" name=""  maxlength="11"  required="">
+            <input type="tel" name="tel_num"  maxlength="11"  required="">
             <label>Telefon</label>
         </div>
+
         <div class="user-box">
-            <input type="password" name=""    required="">
+            <input type="text" name="email"    required="">
+            <label>E-mail</label>
+        </div>
+
+        <div class="user-box">
+            <input type="password" name="password"    required="">
             <label>Şifre</label>
         </div>
 
+        <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
+        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;">Kayıt Ol </button>
 
-        <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Gönder
-        </a>
+
     </form>
 </div>
 

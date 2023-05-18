@@ -24,7 +24,7 @@
         </div>
 
         <a href="#">Gönder</a>
-        <a href="UserRegister">
+        <a href="register">
             Kayıt Ol
         </a>
 

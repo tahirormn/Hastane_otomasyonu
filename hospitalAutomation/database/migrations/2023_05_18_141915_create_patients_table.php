@@ -14,17 +14,16 @@ return new class extends Migration
     public function up()
     {
         Schema::create('patients', function (Blueprint $table) {
-            $table->id();
-            $table->integer('pat_id');
+            $table->id('pat_id');
             $table->string('name');;
             $table->string('surname');
-            $table->integer('tc_identity')->unique();
+            $table->string('tc_identity')->unique();
             $table->string('birthplace');
             $table->string('birthdate');
             $table->string('tel_num')->unique();;
             $table->string('email')->unique();
             $table->string('password')->unique();
-            $table->integer('blood_id');
+           // $table->string('blood_id');
             $table->timestamps();
         });
     }
