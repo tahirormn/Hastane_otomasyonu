@@ -14,12 +14,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('appointments', function (Blueprint $table) {
-            $table->id();
-            $table->integer('pat_id');
-            $table->integer('emplooye_id');
-            $table->string('complaint');
-            $table->integer('appoint_time');
-            $table->string('appoint_date');
+            $table->id('pat_id');
+           // $table->integer('emplooye_id');
+            $table->string('name')->unique();
+            $table->string('surname')->unique();
+            $table->string('tc_identity')->unique();
+            $table->string('city')->unique();
+            $table->string('dr_name')->unique();
+            $table->string('department')->unique();//klinik seçimi
+            $table->string('appoint_date')->unique();//randevu tarihi
+            $table->integer('appoint_time')->unique();//randevu saati
+            $table->string('complaint')->nullable();//şikayet yazma
             $table->timestamps();
         });
     }
