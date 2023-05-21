@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('surname');
             $table->string('tc_identity');
             $table->string('department');//klinik seçimi
-            $table->string('appoint_date')->unique();//randevu tarihi
-            $table->string('appoint_time')->unique();//randevu saati
+            $table->string('appoint_date');//randevu tarihi
+            $table->string('appoint_time');//randevu saati
             $table->string('tel_num');
             $table->timestamps();
         });
