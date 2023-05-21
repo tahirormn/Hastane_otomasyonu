@@ -15,13 +15,13 @@ return new class extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id('pat_id');
-            $table->string('name')->unique();
-            $table->string('surname')->unique();
-            $table->string('tc_identity')->unique();
-            $table->string('department')->unique();//klinik seçimi
+            $table->string('name');
+            $table->string('surname');
+            $table->string('tc_identity');
+            $table->string('department');//klinik seçimi
             $table->string('appoint_date')->unique();//randevu tarihi
             $table->string('appoint_time')->unique();//randevu saati
-            $table->string('tel_num')->unique();
+            $table->string('tel_num');
             $table->timestamps();
         });
     }
