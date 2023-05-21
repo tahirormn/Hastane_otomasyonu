@@ -14,6 +14,9 @@ Route::get('/login', function (){
 Route::get('/register', function (){
     return view('UserRegister.register');
 });
+Route::get('/randevu', function (){
+    return view('appointment.appointment');
+});
 
 
 //Route::get('/appointment',[PatientController::class,'index'])->name('register');
