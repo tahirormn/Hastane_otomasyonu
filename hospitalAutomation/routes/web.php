@@ -14,12 +14,11 @@ Route::get('/login', function (){
 Route::get('/register', function (){
     return view('UserRegister.register');
 });
-Route::get('/randevu', function (){
-    return view('appointment.appointment');
-});
+//Route::get('/randevu', function (){
+  //  return view('appointment.appointment');
+//});
 
 
-//Route::get('/appointment',[PatientController::class,'index'])->name('register');
 Route::post('/appointment',[PatientController::class,'ekle'])->name('register');
-Route::post('/randevu_al',[appointmentsController::class,'index'])->name('randevu_al');
+Route::get('/randevu',[appointmentsController::class,'index'])->name('randevu');
 Route::post('/randevu_alınıyor',[appointmentsController::class,'eklemek'])->name('randevu_alınıyor');

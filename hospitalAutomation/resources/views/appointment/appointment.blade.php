@@ -13,28 +13,29 @@
 
 
     <h2>Randevu Al</h2>
-    <form>
+    <form action="{{route("randevu_alınıyor")}}" method="post">
+        @csrf
         <div class="user-box">
-            <input type="text" name=""    required="">
+            <input type="text" name="name"    required="">
             <label>Adınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name=""    required="">
+            <input type="text" name="surname"    required="">
             <label>Soyadınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name="" maxlength="11"   required="">
+            <input type="text" name="tc_identity" maxlength="11"   required="">
             <label>TC KİMLİK NUMARANIZ</label>
         </div>
         <div class="user-box">
             <label for="date"></label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="appoint_date">
             <label for="time">Randevu Tarihi:</label>
 
         </div>
         <div class="user-box">
             <p>Saati giriniz:</p>
-            <input type="time" id="time" name="time">
+            <input type="time" id="time" name="appoint_time">
         </div>
 
 
@@ -42,7 +43,7 @@
 
         <div class="user-box">
             <label>Klinik Seçiniz</label> <br> <br>
-            <select name="klinik" style="max-width:350px">
+            <select name="department" style="max-width:350px">
                 <option value="0">------</option>
                 <option value="1">Aile Hekimliği</option>
                 <option value="2">Algoloji</option>
@@ -111,17 +112,14 @@
         </div>
 
         <div class="user-box">
-            <input type="tel" name=""  maxlength="11"  required="">
+            <input type="tel" name="tel_num"  maxlength="11"  required="">
             <label>Telefon Numaranızı Giriniz</label>
         </div>
 
-        <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Gönder
-        </a>
+        <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
+        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;">Gönder</button>
+
+
     </form>
 
 
