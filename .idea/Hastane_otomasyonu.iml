@@ -8,6 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/hospitalAutomation/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/hospitalAutomation/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/hospitalAutomation/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hospitalAutomation/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/hospitalAutomation/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/hospitalAutomation/vendor/fakerphp/faker" />
       <excludeFolder url="file://$MODULE_DIR$/hospitalAutomation/vendor/doctrine/lexer" />
