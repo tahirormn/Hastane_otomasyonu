@@ -18,10 +18,10 @@
         </div>
         <ul class="nav_links">
             <li><a href="/">Anasayfa</a></li>
-            <li><a href="#Hakkımızda">Hakkımızda</a></li>
-            <li><a href="#hekimlerimiz">Hekimlerimiz</a></li>
+            <li><a href="about">Hakkımızda</a></li>
+            <li><a href="doctors">Hekimlerimiz</a></li>
             <li><a href="#Yönetimkurulu">Yönetim Kurulu</a></li>
-            <li><a href="#sonuçlar">Sonuçlar</a></li>
+            <li><a href="result">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
         </ul>
     </div>

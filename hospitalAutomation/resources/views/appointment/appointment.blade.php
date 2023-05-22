@@ -13,7 +13,11 @@
 
 
     <h2>Randevu Al</h2>
-    <form action="{{route("randevu_alınıyor")}}" method="post">
+<<<<<<< HEAD
+    <form action="{{route('appointment')}}" method="post">
+=======
+    <form action="{{route("appointment")}}" method="post">
+>>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
         @csrf
         <div class="user-box">
             <input type="text" name="name"    required="">
@@ -45,69 +49,30 @@
             <label>Klinik Seçiniz</label> <br> <br>
             <select name="department" style="max-width:350px">
                 <option value="0">------</option>
-                <option value="1">Aile Hekimliği</option>
-                <option value="2">Algoloji</option>
-                <option value="3">Anesteziyoloji ve Reanimasyon</option>
-                <option value="4">Beyin ve Sinir Cerrahisi</option>
-                <option value="5">Cerrahi Onkolojisi</option>
-                <option value="6">Çocuk Cerrahisi</option>
-                <option value="7">Çocuk Diş Hekimliği</option>
-                <option value="8">Çocuk Endokrinolojisi</option>
-                <option value="9">Çocuk Gastroenterolojisi</option>
-                <option value="10">Çocuk İmmünolojisi ve Alerji Hastalıkları</option>
-                <option value="11">Çocuk Kardiyolojisi</option>
-                <option value="12">Çocuk Nefrolojisi</option>
-                <option value="13">Çocuk Nörolojisi</option>
-                <option value="14">Çocuk Romatolojisi</option>
-                <option value="15">Çocuk Sağlığı ve Hastalıkları</option>
-                <option value="16">Çocuk Ürolojisi</option>
-                <option value="17">Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları</option>
-                <option value="18">Deri ve Zührevi Hastalıkları (Cildiye)</option>
-                <option value="19">>Diş Hekimliği (Genel Diş)</option>
-                <option value="20">El Cerrahisi</option>
-                <option value="21">Endodonti</option>
-                <option value="22">Endokrinoloji ve Metabolizma Hastalıkları</option>
-                <option value="23">Enfeksiyon Hastalıkları ve Klinik Mikrobiyoloji</option>
-                <option value="24">Fiziksel Tıp ve Rehabilitasyon</option>
-                <option value="25">Gastroenteroloji</option>
-                <option value="26">Gastroenteroloji Cerrahisi</option>
-                <option value="27">Geleneksel Tamamlayıcı Tıp Ünitesi</option>
-                <option value="28">Genel Cerrahi</option>
-                <option value="29">Geriatri</option>
-                <option value="30">Göğüs Cerrahisi</option>
-                <option value="31">Göğüs Hastalıkları</option>
-                <option value="32">Göz Hastalıkları</option>
-                <option value="33">Hematoloji</option>
-                <option value="34">İç Hastalıkları (Dahiliye)</option>
-                <option value="35">İmmünoloji ve Alerji Hastalıkları</option>
-                <option value="36">Jinekolojik Onkoloji Cerrahisi</option>
-                <option value="37">Kadın Hastalıkları ve Doğum</option>
-                <option value="38">Kalp ve Damar Cerrahisi</option>
-                <option value="39">Kardiyoloji</option>
-                <option value="40">Klinik Nörofizyoloji</option>
-                <option value="41">Kulak Burun Boğaz Hastalıkları</option>
-                <option value="42">Nefroloji</option>
-                <option value="43">Neonatoloji</option>
-                <option value="44">Nöroloji</option>
-                <option value="45">Ortodonti</option>
-                <option value="46">Ortopedi ve Travmatoloji</option>
-                <option value="47">Perinatoloji</option>
-                <option value="48">Periodontoloji</option>
-                <option value="49">Plastik, Rekonstrüktif ve Estetik Cerrahi</option>
-                <option value="50">Protetik Diş Tedavisi</option>
-                <option value="51">Radyasyon Onkolojisi</option>
-                <option value="52">Restoratif Diş Tedavisi</option>
-                <option value="53">Romatoloji</option>
-                <option value="54">>Ruh Sağlığı ve Hastalıkları (Psikiyatri)</option>
-                <option value="55">Sağlık Kurulu Erişkin</option>
-                <option value="56">>Sağlık Kurulu ÇÖZGER (Çocuk Özel Gereksinim Raporu)</option>
-                <option value="57">Sigarayı Bıraktırma Kliniği</option>
-                <option value="58">Tıbbi Genetik</option>
-                <option value="59">Tıbbi Onkoloji</option>
-                <option value="60">Uyku Polikliniği</option>
-                <option value="61">>Üroloji</option>
-                <option value="62">>Ağız, Diş ve Çene Cerrahisi</option>
-                <option value="63">Ağız, Diş ve Çene Radyolojisi</option>
+                <option value="1">Cerrahi Onkolojisi</option>
+                <option value="2">Çocuk İmmünolojisi ve Alerji Hastalıkları</option>
+                <option value="3">Çocuk Sağlığı ve Hastalıkları</option>
+                <option value="4">Deri ve Zührevi Hastalıkları (Cildiye)</option>
+                <option value="5">>Diş Hekimliği (Genel Diş)</option>
+                <option value="6">Enfeksiyon Hastalıkları ve Klinik Mikrobiyoloji</option>
+                <option value="7">Fiziksel Tıp ve Rehabilitasyon</option>
+                <option value="8">Gastroenteroloji</option>
+                <option value="9">Genel Cerrahi</option>
+                <option value="10">Göğüs Cerrahisi</option>
+                <option value="11">Göğüs Hastalıkları</option>
+                <option value="12">Göz Hastalıkları</option>
+                <option value="13">İç Hastalıkları (Dahiliye)</option>
+                <option value="14">İmmünoloji ve Alerji Hastalıkları</option>
+                <option value="15">Kadın Hastalıkları ve Doğum</option>
+                <option value="16">Kalp ve Damar Cerrahisi</option>
+                <option value="17">Kardiyoloji</option>
+                <option value="18">Kulak Burun Boğaz Hastalıkları</option>
+                <option value="19">Nöroloji</option>
+                <option value="20">Ortopedi ve Travmatoloji</option>
+                <option value="21">Plastik, Rekonstrüktif ve Estetik Cerrahi</option>
+                <option value="22">Romatoloji</option>
+                <option value="23">>Ruh Sağlığı ve Hastalıkları (Psikiyatri)</option>
+                <option value="24">Sigarayı Bıraktırma Kliniği</option>
             </select> <br> <br>
         </div>
 
@@ -117,23 +82,8 @@
         </div>
 
         <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
-        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;">Gönder</button>
-
-
+        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;" name="gonder">Gönder</button>
     </form>
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
 </body>
 </html>

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Patient extends Model
 {
     use HasFactory;
@@ -15,10 +16,13 @@ class Patient extends Model
         'tc_identity',
         'birthplace',
         'birthdate',
+        //'blood_id',
         'tel_num',
         'email',
         'password',
-       // 'blood_id'
 
     ]);
+   /* public function blood_group(){
+        return $this->hasOne(Blood_group::class);
+    }*/
 }
