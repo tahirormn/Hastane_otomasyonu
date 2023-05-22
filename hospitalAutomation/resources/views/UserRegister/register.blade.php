@@ -7,11 +7,10 @@
     <title>Kayıt OL</title>
     <link rel="stylesheet" href="{{url('css/register/register.css')}}">
 </head>
+
 <body>
 
 <div class="login-box">
-
-
 
     <h2>Kayıt Ol</h2>
     <form action="{{route("register")}}" method="post">
@@ -41,24 +40,23 @@
 
 
 
-
-     <!--   <div class="user-box">
+      <!-- <div class="user-box">
             <label>Kan Grubu</label> <br> <br>
-            <select name="blood_id" size="1"> <br>
+            <select name="blood_group" size="1"> <br>
 
-                <option value="A">A Rh+</option>
-                <option value="B">A Rh-</option>
-                <option value="B">B Rh+</option>
-                <option value="0">B Rh-</option>
-                <option value="A">AB Rh+</option>
-                <option value="B">AB Rh-</option>
-                <option value="B">0 Rh+</option>
-                <option value="0">0 Rh-</option>
+                <option value="1">A Rh+</option>
+                <option value="2">A Rh-</option>
+                <option value="3">B Rh+</option>
+                <option value="4">B Rh-</option>
+                <option value="5">AB Rh+</option>
+                <option value="6">AB Rh-</option>
+                <option value="7">0 Rh+</option>
+                <option value="8">0 Rh-</option>
 
             </select> <br> <br>
 
+        </div>-->
 
-        </div> -->
         <div class="user-box">
             <input type="tel" name="tel_num"  maxlength="11"  required="">
             <label>Telefon</label>
@@ -83,3 +81,4 @@
 
 </body>
 </html>
+

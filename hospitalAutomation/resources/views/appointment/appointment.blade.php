@@ -13,7 +13,7 @@
 
 
     <h2>Randevu Al</h2>
-    <form action="{{route("randevu_alınıyor")}}" method="post">
+    <form action="{{route("appointment")}}" method="post">
         @csrf
         <div class="user-box">
             <input type="text" name="name"    required="">

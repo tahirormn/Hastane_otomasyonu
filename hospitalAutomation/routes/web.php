@@ -14,12 +14,17 @@ Route::get('/login', function (){
 Route::get('/register', function (){
     return view('UserRegister.register');
 });
-//Route::get('/randevu', function (){
-  //  return view('appointment.appointment');
-//});
 
-Route::get('/result', [\App\Http\Controllers\ResultController::class, 'result']);
 
 Route::post('/appointment',[PatientController::class,'ekle'])->name('register');
-Route::get('/randevu',[appointmentsController::class,'index'])->name('randevu');
-Route::post('/randevu_alınıyor',[appointmentsController::class,'eklemek'])->name('randevu_alınıyor');
+Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
+
+Route::get('/about', function (){
+    return view('about');
+});
+Route::get('/doctors', function (){
+    return view('doctors');
+});
+Route::get('/boardOfDirector', function (){
+    return view('boardOfDirector');
+});

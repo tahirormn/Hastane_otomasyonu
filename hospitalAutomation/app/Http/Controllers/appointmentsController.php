@@ -7,9 +7,7 @@ use \App\Models\Appointment;
 
 class appointmentsController extends Controller
 {
-    public function index(){
-        return view('appointment.appointment');
-    }
+
 public function eklemek(Request $request){
     $name=$request->name;
     $surname=$request->surname;
@@ -27,5 +25,6 @@ public function eklemek(Request $request){
         'appoint_time'=>$appoint_time,
         'tel_num'=>$tel_num,
     ]);
+    return view('homepage.home');
 }
 }

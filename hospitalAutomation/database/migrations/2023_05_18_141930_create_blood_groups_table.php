@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('blood_groups', function (Blueprint $table) {
-            $table->id();
-            $table->integer('blood_id');
+            $table->id('blood_id');
             $table->string('blood_group');
             $table->timestamps();
         });
