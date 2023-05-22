@@ -14,7 +14,11 @@
 
     <h2>Randevu Al</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <form action="{{route('appointment')}}" method="post">
+=======
+    <form action="{{route("appointment")}}" method="post">
+>>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
 =======
     <form action="{{route("appointment")}}" method="post">
 >>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d

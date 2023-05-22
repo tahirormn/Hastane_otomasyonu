@@ -9,7 +9,10 @@ class appointmentsController extends Controller
 {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
 =======
 >>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
 public function eklemek(Request $request){
@@ -31,7 +34,10 @@ public function eklemek(Request $request){
     ]);
     return view('homepage.home');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
 =======
 >>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
 }
