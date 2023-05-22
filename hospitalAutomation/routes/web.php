@@ -18,6 +18,7 @@ Route::get('/register', function (){
   //  return view('appointment.appointment');
 //});
 
+Route::get('/result', [\App\Http\Controllers\ResultController::class, 'result']);
 
 Route::post('/appointment',[PatientController::class,'ekle'])->name('register');
 Route::get('/randevu',[appointmentsController::class,'index'])->name('randevu');

@@ -21,7 +21,7 @@
             <li><a href="#Hakkımızda">Hakkımızda</a></li>
             <li><a href="#hekimlerimiz">Hekimlerimiz</a></li>
             <li><a href="#Yönetimkurulu">Yönetim Kurulu</a></li>
-            <li><a href="#sonuçlar">Sonuçlar</a></li>
+            <li><a href="result">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
         </ul>
     </div>
