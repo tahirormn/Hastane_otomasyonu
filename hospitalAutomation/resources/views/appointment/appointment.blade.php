@@ -13,15 +13,7 @@
 
 
     <h2>Randevu Al</h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <form action="{{route('appointment')}}" method="post">
-=======
     <form action="{{route("appointment")}}" method="post">
->>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
-=======
-    <form action="{{route("appointment")}}" method="post">
->>>>>>> bc3a81cfd0f98c42a8100a0070b7e91192755b3d
         @csrf
         <div class="user-box">
             <input type="text" name="name"    required="">
@@ -42,10 +34,36 @@
 
         </div>
         <div class="user-box">
-            <p>Saati giriniz:</p>
-            <input type="time" id="time" name="appoint_time">
-        </div>
-
+            <label>Randevu saatini seçiniz</label> <br> <br>
+            <select name="appoint_time" style="max-width:100px">
+                <option value="0">------</option>
+                <option value="1">9:00</option>
+                <option value="2">9:15</option>
+                <option value="3">9:30</option>
+                <option value="1">9:45</option>
+                <option value="2">10:00</option>
+                <option value="3">10:15</option>
+                <option value="1">10:30</option>
+                <option value="2">10:45</option>
+                <option value="2">11:00</option>
+                <option value="3">11:15</option>
+                <option value="1">11:30</option>
+                <option value="2">11:45</option>
+                <option value="1">13:30</option>
+                <option value="2">13:45</option>
+                <option value="3">14:00</option>
+                <option value="3">14:15</option>
+                <option value="1">14:30</option>
+                <option value="2">14:45</option>
+                <option value="2">15:00</option>
+                <option value="3">15:15</option>
+                <option value="1">15:30</option>
+                <option value="2">15:45</option>
+                <option value="2">16:00</option>
+                <option value="3">16:15</option>
+                <option value="1">16:30</option>
+                <option value="2">16:45</option>
+            </select> <br> <br> </div>
 
 
 
