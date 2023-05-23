@@ -27,3 +27,6 @@ Route::get('/boardOfDirector', function (){
 
 Route::post('/appointment',[PatientController::class,'ekle'])->name('register');
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
+Route::post('/appointment',[AppointmentController::class,'submitForm'])->name('login');
+
+

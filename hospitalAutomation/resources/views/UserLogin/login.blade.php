@@ -13,10 +13,21 @@
     <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
 
     <h2>Giriş Yap</h2>
-    <form>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    <form method="POST" action="{{ route('login') }}">
         <div class="user-box">
             <input type="text" name="" maxlength="11"   required="">
             <label>TC KİMLİK NUMARASI</label>
+
         </div>
         <div class="user-box">
             <input type="password" name="" required="">
