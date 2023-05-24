@@ -26,6 +26,10 @@ Route::get('/boardOfDirector', function (){
     return view('boardOfDirector');
 });
 
+Route::get('/kayit', function (){
+    return view('appointment.appointment');
+});
+
 Route::post('/login',[PatientController::class,'ekle'])->name('register');
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
 //Route::post('/appointment',[AppointmentController::class,'submitForm'])->name('login');

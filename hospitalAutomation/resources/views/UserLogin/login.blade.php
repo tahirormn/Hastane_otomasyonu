@@ -34,7 +34,7 @@
             <label>Şifre</label>
         </div>
 
-        <a href="#">
+        <a href="kayit">
             Gönder
         </a>
         <a href="register">
