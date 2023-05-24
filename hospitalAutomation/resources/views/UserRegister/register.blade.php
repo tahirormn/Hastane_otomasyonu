@@ -13,7 +13,7 @@
 <div class="login-box">
 
     <h2>Kayıt Ol</h2>
-    <form action="{{route("register")}}" method="post">
+    <form action="{{route('register')}}" method="post">
         @csrf
         <div class="user-box">
             <input type="text" name="name"    required="">
