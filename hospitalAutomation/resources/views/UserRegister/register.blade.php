@@ -40,22 +40,30 @@
 
 
 
-      <!-- <div class="user-box">
+        <div class="user-box">
             <label>Kan Grubu</label> <br> <br>
-            <select name="blood_group" size="1"> <br>
-
-                <option value="1">A Rh+</option>
-                <option value="2">A Rh-</option>
-                <option value="3">B Rh+</option>
-                <option value="4">B Rh-</option>
-                <option value="5">AB Rh+</option>
-                <option value="6">AB Rh-</option>
-                <option value="7">0 Rh+</option>
-                <option value="8">0 Rh-</option>
+            <select name="blood_group" onchange="veriEkleme(this)" size="1"> <br>
+                <option value="A Rh+">A Rh+</option>
+                <option value="A Rh-">A Rh-</option>
+                <option value="B Rh+">B Rh+</option>
+                <option value="B Rh-">B Rh-</option>
+                <option value="AB Rh+">AB Rh+</option>
+                <option value="AB Rh-">AB Rh-</option>
+                <option value="0 Rh+">0 Rh+</option>
+                <option value="0 Rh-">0 Rh-</option>
 
             </select> <br> <br>
 
-        </div>-->
+
+            <script>
+                function veriEkleme(selTag) {
+                    var x = selTag.options[selTag.selectedIndex].text;
+                    document.getElementById("blood_group").innerHTML = x;
+                }
+            </script>
+
+
+        </div>
 
         <div class="user-box">
             <input type="tel" name="tel_num"  maxlength="11"  required="">

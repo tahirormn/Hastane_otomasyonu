@@ -23,18 +23,20 @@
         </div>
     @endif
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="#"> <!-- action kısmı problem sebebiyle silindi-->
         <div class="user-box">
-            <input type="text" name="" maxlength="11"   required="">
+            <input type="text" name="tc_identity" maxlength="11"   required="">
             <label>TC KİMLİK NUMARASI</label>
 
         </div>
         <div class="user-box">
-            <input type="password" name="" required="">
+            <input type="password" name="password" required="">
             <label>Şifre</label>
         </div>
 
-        <a href="#">Gönder</a>
+        <a href="#">
+            Gönder
+        </a>
         <a href="register">
             Kayıt Ol
         </a>

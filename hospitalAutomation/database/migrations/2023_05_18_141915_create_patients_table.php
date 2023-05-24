@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('tc_identity')->unique();
             $table->string('birthplace');
             $table->string('birthdate');
-            //$table->unsignedBigInteger('blood_id');
+            $table->string('blood_group');
             $table->string('tel_num')->unique();
             $table->string('email')->unique();
             $table->string('password')->unique();

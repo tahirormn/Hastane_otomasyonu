@@ -14,8 +14,7 @@ class PatientController extends Controller
         $tc_identity=$request->tc_identity;
         $birthplace=$request->birthplace;
         $birthdate=$request->birthdate;
-       // $blood_id=$request->blood_id;
-        //$blood_group=$request->blood_group;
+        $blood_group=$request->blood_group;
         $tel_num=$request->tel_num;
         $email=$request->email;
         $password=$request->password;
@@ -27,12 +26,12 @@ class PatientController extends Controller
             'tc_identity'=>$tc_identity,
             'birthplace'=>$birthplace,
             'birthdate'=>$birthdate,
-           // 'blood_id'=>$blood_id,
+            'blood_group'=>$blood_group,
             'tel_num'=>$tel_num,
             'email'=>$email,
             'password'=>$password
 
         ]);
-        return view('appointment.appointment');
+        return view('UserLogin.login');
     }
 }

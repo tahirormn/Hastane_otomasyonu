@@ -16,7 +16,7 @@ class Patient extends Model
         'tc_identity',
         'birthplace',
         'birthdate',
-        //'blood_id',
+        'blood_group',
         'tel_num',
         'email',
         'password',
