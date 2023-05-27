@@ -37,10 +37,10 @@
             <label>Randevu saatini seçiniz</label> <br> <br>
             <select name="appoint_time"  style="max-width:100px">
                 <option >------</option>
-                <option value="9:00">9:00</option>
-                <option value="9:15">9:15</option>
-                <option value="9:30">9:30</option>
-                <option value="9:45">9:45</option>
+                <option value="09:00">9:00</option>
+                <option value="09:15">9:15</option>
+                <option value="09:30">9:30</option>
+                <option value="09:45">9:45</option>
                 <option value="10:00">10:00</option>
                 <option value="10:15">10:15</option>
                 <option value="10:30">10:30</option>
