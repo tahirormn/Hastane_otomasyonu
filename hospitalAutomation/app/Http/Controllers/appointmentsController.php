@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Models\Appointment;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
+
 
 class appointmentsController extends Controller
 {
@@ -17,16 +21,35 @@ class appointmentsController extends Controller
         $appoint_date = $request->appoint_date;
         $appoint_time = $request->appoint_time;
         $tel_num = $request->tel_num;
-        Appointment::create([
-            'name' => $name,
-            'surname' => $surname,
-            'tc_identity' => $tc_identity,
-            'department' => $department,
-            'appoint_date' => $appoint_date,
-            'appoint_time' => $appoint_time,
-            'tel_num' => $tel_num,
-        ]);
-        return view('homepage.home');
+
+        $k = DB::table('appointments')->where('department', '=', $department)->get();
+
+        $l = null;
+        $f = null;
+
+        foreach ($k as $db_dep){
+            $l = $db_dep->appoint_date;
+            $f = $db_dep->appoint_time;
+        }
+
+        if($appoint_date == $l && $appoint_time == $f){
+            return redirect()->back() ->with('alert', 'Aradığınız kriterlere uygun randevu bulunamadı.');
+        }
+
+        else{
+            Appointment::create([
+                'name' => $name,
+                'surname' => $surname,
+                'tc_identity' => $tc_identity,
+                'department' => $department,
+                'appoint_date' => $appoint_date,
+                'appoint_time' => $appoint_time,
+                'tel_num' => $tel_num,
+            ]);
+            return view('homepage.home');
+
+        }
+
 
     }
 }

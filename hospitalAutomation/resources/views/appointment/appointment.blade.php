@@ -27,45 +27,6 @@
             <input type="text" name="tc_identity" maxlength="11"   required="">
             <label>TC KİMLİK NUMARANIZ</label>
         </div>
-        <div class="user-box">
-            <label for="date"></label>
-            <input type="date" id="date" name="appoint_date">
-            <label for="time">Randevu Tarihi:</label>
-
-        </div>
-        <div class="user-box">
-            <label>Randevu saatini seçiniz</label> <br> <br>
-            <select name="appoint_time"  style="max-width:100px">
-                <option >------</option>
-                <option value="09:00">9:00</option>
-                <option value="09:15">9:15</option>
-                <option value="09:30">9:30</option>
-                <option value="09:45">9:45</option>
-                <option value="10:00">10:00</option>
-                <option value="10:15">10:15</option>
-                <option value="10:30">10:30</option>
-                <option value="10:45">10:45</option>
-                <option value="11:00">11:00</option>
-                <option value="11:15">11:15</option>
-                <option value="11:30">11:30</option>
-                <option value="11:45">11:45</option>
-                <option value="13:30">13:30</option>
-                <option value="13:45">13:45</option>
-                <option value="14:00">14:00</option>
-                <option value="14:15">14:15</option>
-                <option value="14:30">14:30</option>
-                <option value="14:45">14:45</option>
-                <option value="15:00">15:00</option>
-                <option value="15:15">15:15</option>
-                <option value="15:30">15:30</option>
-                <option value="15:45">15:45</option>
-                <option value="16:00">16:00</option>
-                <option value="16:15">16:15</option>
-                <option value="16:30">16:30</option>
-                <option value="16:45">16:45</option>
-            </select> <br> <br> </div>
-
-
 
         <div class="user-box">
             <label>Klinik Seçiniz</label> <br> <br>
@@ -99,13 +60,70 @@
         </div>
 
         <div class="user-box">
+            <label for="date"></label>
+            <input type="date" id="date" name="appoint_date">
+            <label for="time">Randevu Tarihi:</label>
+
+        </div>
+
+        <div class="user-box">
+            <label>Randevu saatini seçiniz</label> <br> <br>
+            <select name="appoint_time"  style="max-width:100px">
+                <option >------</option>
+                <option value="09:00">9:00</option>
+                <option value="09:15">9:15</option>
+                <option value="09:30">9:30</option>
+                <option value="09:45">9:45</option>
+                <option value="10:00">10:00</option>
+                <option value="10:15">10:15</option>
+                <option value="10:30">10:30</option>
+                <option value="10:45">10:45</option>
+                <option value="11:00">11:00</option>
+                <option value="11:15">11:15</option>
+                <option value="11:30">11:30</option>
+                <option value="11:45">11:45</option>
+                <option value="13:30">13:30</option>
+                <option value="13:45">13:45</option>
+                <option value="14:00">14:00</option>
+                <option value="14:15">14:15</option>
+                <option value="14:30">14:30</option>
+                <option value="14:45">14:45</option>
+                <option value="15:00">15:00</option>
+                <option value="15:15">15:15</option>
+                <option value="15:30">15:30</option>
+                <option value="15:45">15:45</option>
+                <option value="16:00">16:00</option>
+                <option value="16:15">16:15</option>
+                <option value="16:30">16:30</option>
+                <option value="16:45">16:45</option>
+            </select> <br> <br>
+        </div>
+
+
+        <div class="user-box">
             <input type="tel" name="tel_num"  maxlength="11"  required="">
             <label>Telefon Numaranızı Giriniz</label>
         </div>
 
         <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
         border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;" name="gonder">Gönder</button>
+        @if(session()->has('jsAlert'))
+            <script>
+                alert({{ session()->get('jsAlert') }});
+            </script>
+        @endif
     </form>
+
 </div>
 </body>
 </html>
+
+<script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
+        alert(msg);
+    }
+</script>
+
+

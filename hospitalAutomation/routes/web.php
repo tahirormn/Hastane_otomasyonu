@@ -31,7 +31,9 @@ Route::get('/kayit', function (){
 });
 
 Route::post('/login',[PatientController::class,'ekle'])->name('register');
+
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
+
 //Route::post('/appointment',[AppointmentController::class,'submitForm'])->name('login');
 
 
