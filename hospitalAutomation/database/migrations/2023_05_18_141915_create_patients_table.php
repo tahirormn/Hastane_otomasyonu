@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('blood_group');
             $table->string('tel_num')->unique();
             $table->string('email')->unique();
-            $table->string('password')->unique();
+            $table->string('password');
             $table->timestamps();
         });
     }

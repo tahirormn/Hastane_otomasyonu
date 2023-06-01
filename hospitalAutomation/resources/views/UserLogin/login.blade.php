@@ -13,17 +13,15 @@
     <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
 
     <h2>Giriş Yap</h2>
-    @if ($errors->any())
-        <div class="alert alert-danger">
+    @if (session('error'))
+        <div class="alert alert-error">
             <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
+                <li>{{session('error')}}</li>
             </ul>
         </div>
     @endif
-
-    <form method="POST" action="#"> <!-- action kısmı problem sebebiyle silindi-->
+    <form action="{{route('login')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
+        @csrf
         <div class="user-box">
             <input type="text" name="tc_identity" maxlength="11"   required="">
             <label>TC KİMLİK NUMARASI</label>
@@ -34,9 +32,8 @@
             <label>Şifre</label>
         </div>
 
-        <a href="kayit">
-            Gönder
-        </a>
+        <button type="submit" style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
+        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;"> Gönder </button>
         <a href="register">
             Kayıt Ol
         </a>
