@@ -50,7 +50,7 @@ section{
 header{
     background: #000;
     border-bottom: 1px solid rgb(238, 238, 238, 0.801);
-    position: fixed; /*sayfa aşağı indikçe menü sabit kalır.*/
+    position: relative; /*sayfa aşağı indikçe menü sabit kalır.*/
     width: 100%;
     z-index: 5;
 }

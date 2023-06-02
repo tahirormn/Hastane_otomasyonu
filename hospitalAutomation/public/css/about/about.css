@@ -1,0 +1,84 @@
+
+
+
+.sol{
+    overflow: hidden;
+
+
+}
+
+.sol h1{
+
+    position: relative;
+    left: 43%;
+    top: auto;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+
+
+
+}
+.sol p{
+    color: darkblue;
+    font-size:x-large;
+    font-weight: 900;
+    font-family: "Candara Light";
+    display: block;
+    height: auto;
+    width: auto;
+    line-height:2.1;
+    margin-left:25px ;
+    margin-right: 50px;
+    text-align: justify;
+    text-shadow: 2px 2px 5px gray;
+
+
+
+}
+
+.sag h1{
+    text-align: center;
+    position:absolute;
+    left: 67%;
+    top: 0;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    text-shadow: 2px 2px 5px gray;
+
+}
+
+
+.sag .kutu h4{
+    font-size: xx-large;
+    text-align: center;
+    position:relative;
+    top: 30px;
+    color: black;
+    text-shadow: 2px 2px 5px gray;
+}
+.sag .kutu .adr .item span{
+    text-align: center;
+}
+.sag .sosyalmediaikonları li{
+    display: inline;
+    font-size: x-large;
+    position:relative;
+    left: 41%;
+    padding: 15px;
+    bottom: 15px;
+
+
+
+}
+.sag .item{
+    font-size: large;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.sag .item{
+
+    height: 70px;
+}
+
