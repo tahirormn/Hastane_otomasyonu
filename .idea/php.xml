@@ -122,6 +122,7 @@
       <path value="$PROJECT_DIR$/hospitalAutomation/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/hospitalAutomation/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/hospitalAutomation/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/hospitalAutomation/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

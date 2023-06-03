@@ -13,6 +13,11 @@
 <div class="login-box">
 
     <h2>Kayıt Ol</h2>
+    <div style="background-color: #b65b2a">
+        @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+        @endforeach
+    </div>
     <form action="{{route('register')}}" method="post">
         @csrf
         <div class="user-box">
@@ -78,6 +83,11 @@
         <div class="user-box">
             <input type="password" name="password"    required="">
             <label>Şifre</label>
+        </div>
+
+        <div class="user-box">
+            <input type="password" name="password_confirmation"    required="">
+            <label>Şifre Tekrar</label>
         </div>
 
         <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
