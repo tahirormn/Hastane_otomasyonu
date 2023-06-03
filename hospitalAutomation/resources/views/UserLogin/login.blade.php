@@ -32,13 +32,23 @@
             <label>Şifre</label>
         </div>
 
+        <div>
+            <input type='checkbox' name='remember_me' value='on' style="margin-top: 20px;">
+            <label style="color: white">Beni Hatırla</label>
+        </div>
+
         <button type="submit" style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
         border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;"> Gönder </button>
         <a href="register">
             Kayıt Ol
         </a>
 
+
+
+
     </form>
+
+
 </div>
 
 </body>
