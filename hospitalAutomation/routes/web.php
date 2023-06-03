@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ResultController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\appointmentsController;
@@ -24,6 +25,10 @@ Route::get('/doctors', function (){
 });
 Route::get('/boardOfDirector', function (){
     return view('boardOfDirector');
+});
+
+Route::get('results', function (){
+    return view('results.result');
 });
 
 Route::post('/login',[PatientController::class,'ekle'])->name('register');

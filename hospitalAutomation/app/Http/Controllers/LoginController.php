@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
      {
          public function login(Request $request) //veri kontrolü
          {
+
              $datalar = DB::table('patients')->get();
              $tc_identity = $request->tc_identity;
              $password = $request->password;
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\DB;
                      }
              }
              return redirect()->back()->with('error','Girdiğiniz bilgiler hatalı veya kayıtlı değilsiniz.');
+
+
          }
      }
 
