@@ -52,4 +52,25 @@ class appointmentsController extends Controller
 
 
     }
+    public function show(){
+        $appoint=Appointment::get();
+        return view('appointment.randevularım',compact('appoint'));
+    }
+    public function edit($id){
+        $appoint=Appointment::findOrFail($id);
+        return view('appointment.edit',compact('appoint'));
+    }
+    public function update(Request $request,$id){
+        $randevu=Appointment::findOrFail($id);
+        $randevu->update([
+            'department'=>$request->department,
+            'appoint_date'=>$request->appoint_date,
+            'appoint_time'=>$request->appoint_time,
+        ]);
+
+    }
+    public function delete($id){
+        $randevu=Appointment::findOrFail($id)->delete();
+        return \redirect()->back();
+    }
 }

@@ -29,11 +29,23 @@ Route::get('/boardOfDirector', function (){
 Route::get('/kayit', function (){
     return view('appointment.appointment');
 });
+Route::get('/randevularim', function (){
+    return view('appointment.randevularım');
+});
+Route::get('/randevularim/{id}', function (){
+    return view('appointment.edit');
+});
+
+
 
 Route::post('/login',[PatientController::class,'ekle'])->name('register');
 
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
 
+Route::get('/randevularim',[appointmentsController::class,'show'])->name('update');
+Route::get('/randevularim/{id}',[appointmentsController::class,'edit'])->name('appointment.edit');
+Route::get('update/{id}',[appointmentsController::class,'update'])->name('randevularım');
+Route::get('/delete/{id}',[appointmentsController::class, 'delete'])->name('delete');
 //Route::post('/appointment',[AppointmentController::class,'submitForm'])->name('login');
 
 

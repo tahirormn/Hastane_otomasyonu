@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url('css/appointment/appointment.css')}}">
-    <title>Randevu al</title>
+    <title>Randevuyu güncelle</title>
 
 </head>
 <body>
 <div class="login-box">
 
 
-    <h2>Randevu Al</h2>
-    <form action="{{route("appointment")}}" method="post">
+    <h2>Randevuyu güncelle</h2>
+    <form action="{{route("appointment.randevularım",$appoint->id)}}" method="post">
         @csrf
         <div class="user-box">
-            <input type="text" name="name"    required="">
+            <input type="text" name="name"  value="{{$appoint->name}}"  required="">
             <label>Adınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name="surname"    required="">
+            <input type="text" name="surname"  value="{{$appoint->surname}}"  required="">
             <label>Soyadınız</label>
         </div>
         <div class="user-box">
-            <input type="text" name="tc_identity" maxlength="11"   required="">
+            <input type="text" name="tc_identity" value="{{$appoint->tc_identity}}" maxlength="11"   required="">
             <label>TC KİMLİK NUMARANIZ</label>
         </div>
 
         <div class="user-box">
             <label>Klinik Seçiniz</label> <br> <br>
-            <select name="department" id="department" style="max-width:350px">
+            <select name="department" value="{{$appoint->department}}" id="department" style="max-width:350px">
                 <option value="0">------</option>
                 <option value="Cerrahi Onkolojisi">Cerrahi Onkolojisi</option>
                 <option value="Çocuk İmmünolojisi ve Alerji Hastalıkları">Çocuk İmmünolojisi ve Alerji Hastalıkları</option>
@@ -61,14 +61,14 @@
 
         <div class="user-box">
             <label for="date"></label>
-            <input type="date" id="date" name="appoint_date">
+            <input type="date" id="date" name="appoint_date" value="{{$appoint->appoint_date}}">
             <label for="time">Randevu Tarihi:</label>
 
         </div>
 
         <div class="user-box">
             <label>Randevu saatini seçiniz</label> <br> <br>
-            <select name="appoint_time"  style="max-width:100px">
+            <select name="appoint_time" value="{{$appoint->appoint_time}}" style="max-width:100px">
                 <option >------</option>
                 <option value="09:00">9:00</option>
                 <option value="09:15">9:15</option>
@@ -101,12 +101,12 @@
 
 
         <div class="user-box">
-            <input type="tel" name="tel_num"  maxlength="11"  required="">
+            <input type="tel" name="tel_num" value="{{$appoint->tel_num}}" maxlength="11"  required="">
             <label>Telefon Numaranızı Giriniz</label>
         </div>
 
         <button style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
-        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;" name="gonder">Gönder</button>
+        border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;" name="gonder">Güncelle</button>
         @if(session()->has('jsAlert'))
             <script>
                 alert({{ session()->get('jsAlert') }});

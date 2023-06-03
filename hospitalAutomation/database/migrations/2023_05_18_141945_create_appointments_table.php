@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('appointments', function (Blueprint $table) {
-            $table->id('pat_id');
+            $table->id();
             $table->string('name');
             $table->string('surname');
             $table->string('tc_identity');
