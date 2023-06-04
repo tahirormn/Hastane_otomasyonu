@@ -1,5 +1,6 @@
 html{
     scroll-behavior:smooth;
+    overflow-x: hidden;
 
 }
 
@@ -157,8 +158,8 @@ header{
 .linkler{
 
     position: absolute;
-    left: 45%;
-    top: 235%;
+    left: 47%;
+    top: 210%;
 
 
 
