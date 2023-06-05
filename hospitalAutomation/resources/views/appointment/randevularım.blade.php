@@ -1,3 +1,13 @@
+@extends('layouts.app')
+@section('title')
+    RANDEVULARIM
+@endsection
+@section('css')
+    {{url('css/home/style.css')}}
+@endsection
+
+
+@section('body')
 <h1 style="text-align: center">RANDEVULARIM</h1>
 <table class="table" border="2" align="center">
     <thead>
@@ -21,3 +31,4 @@
     @endforeach
     </tbody>
 </table>
+@endsection

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{url('css/boardOFDirector/boardOFDirector.css')}}">
     <title>Board of Directors</title>
 </head>
+
 <body>
 <div class="box">
     <div class="hekim">
@@ -25,7 +26,6 @@
 </html>
 
 
-</body>
-</html>
+
 
 

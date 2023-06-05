@@ -23,6 +23,8 @@
             <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
             <li><a href="results">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
+            <li><a href="randevularim">Randevularım</a></li>
+
         </ul>
     </div>
 </header>
@@ -79,35 +81,6 @@
     </ul>
 </div>
 
-<!-----------------------------------PARKİNSON KISMI------------------->
 
-<div class="parkinson" style="background:url(https://www.gozdehastanesi.com.tr/sitmapinari/upload-files/parkinson-hastaligi.jpg) center; background-size:cover;">
-    <div style="background:RGBA(0,0,0,0.65); padding:150px 15px; text-align:center; color:#becf03; font-size:20px">
-        <h1>Parkinson Hastalığı</h1>
-        Parkinson,  beyinde dopamin üreten hücrelerin kaybı ile ortaya çıkan bir hastalıktır. Dopamin insanların akıcı ve dengeli şekilde hareket etmesini sağlar ve vücudumuzdaki işlevleri oldukça fazladır. Parkinson hastalığı genellikle 60 yaş üzerinde görülmeye başlar. Parkinson hastaları yaşamlarını ortalama olarak 20 yıl civarında bu hastalıkla sürdürür.Parkinson Hastalığı Hangi Belirtilere Neden Olabilir?  <br>
-
-        <pre> Parkinson hastalığının en sık görülen belirtileri bu şekildedir;
-
-* Titreme; el, çene ve dudaklarda istirahat halinde belirgindir,
-
-* Hareketlerde yavaşlama; yürümede harekete başlamada zorluk,
-
-* Kol, bacak ve gövdede katılık, yürürken kolları sallamada azalma
-
-* Denge sorunu, düşme, baş dönmesi ve bayılma
-
-* El yazısında küçülme,
-
-* Koku duyusunda azalma, kayıp
-
-* Uyku bozuklukları; tekmeleme, çırpınma, yataktan düşme,
-
-* Kabızlık, ciltte yağlanma, salya ve salgılarla koyulaşma,
-
-* Maske yüz, düşük tonlu konuşma, kısa adımlarla kolları sallamadan yürüme.
-
-Kendinizde veya yakınlarınızda bu erken belirtilerden bir veya birkaçını fark ediyorsanız, özellikle 60 yaş ve üstü bireylerde <br> Parkinson Hastalığını düşünüp bir NÖROLOJİ UZMANI’na başvurunuz.	</pre>
-    </div>
-</div>
 
 
