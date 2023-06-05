@@ -21,7 +21,7 @@
             <li><a href="about">Hakkımızda</a></li>
             <li><a href="doctors">Hekimlerimiz</a></li>
             <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
-            <li><a href="result">Sonuçlar</a></li>
+            <li><a href="results">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
         </ul>
     </div>

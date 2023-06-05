@@ -1,0 +1,30 @@
+*{
+    background-color: rgb(174, 162, 147);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+.box{
+    border-style: double;
+    height: 100%;
+
+}
+.box .hekim h2{
+    text-shadow: 1px 1px 1px rgb(243, 255, 80);
+    font-size: xx-large;
+    font-family:Times New Roman Georgia Garamond;
+    position: relative;
+    left: 44%;
+    top: -25px;
+
+}
+.box .hekim p{
+    font-family: Times New Roman Georgia Garamond;
+    font-size:larger;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(37, 229, 243);
+
+
+}

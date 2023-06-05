@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Uyarı</title>
+    <title>Sonuclar</title>
 
 </head>
 <body>

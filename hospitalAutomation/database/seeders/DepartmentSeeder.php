@@ -135,6 +135,11 @@ class DepartmentSeeder extends Seeder
                 'dep_id'=>2,
                 'dep_ad'=>'Sigarayı Bıraktırma Kliniği'
             ],
+
+            [
+                'dep_id'=>0,
+                'dep_ad'=>'Beslenme Ve Diyet'
+            ],
         ]);
     }
 }
