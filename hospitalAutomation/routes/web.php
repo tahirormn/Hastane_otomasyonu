@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthorizedLoginController;
 use App\Http\Controllers\ResultController;
+use App\Http\Controllers\ResultsLoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\appointmentsController;
@@ -38,16 +40,20 @@ Route::get('/randevularim/{id}', function (){
     return view('appointment.edit');
 });
 
-
-
-
-Route::get('results', function (){
-    return view('results.result');
+Route::get('resultLogin', function (){
+    return view('results.authorizedLogin');
 });
+
+Route::get('/results', [ResultsLoginController::class, 'resultLoginScreen']);
+
+Route::post('/res', [ResultsLoginController::class, 'resultLogin'])->name('res');
+
 
 Route::post('/login',[PatientController::class,'ekle'])->name('register');
 
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
+
+Route::post('/authorizedLogin', [AuthorizedLoginController::class, 'yetkiliGiris'])->name('authorizedLogin');
 
 
 Route::get('/randevularim',[appointmentsController::class,'show'])->name('update');

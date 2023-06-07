@@ -9,6 +9,10 @@
 </head>
 <body>
 
+<div style="text-align: end; padding: 30px; margin-right: 30px">
+    <a style="color: #03e9f4; text-underline-position: unset" href="resultLogin">Laborant Giriş</a>
+</div>
+
 <div class="login-box">
 
     <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
@@ -22,7 +26,7 @@
         </div>
     @endif
 
-    <form action="{{route('login')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
+    <form action="{{route('res')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
         @csrf
         <div class="user-box">
             <input type="text" name="tc_identity" maxlength="11"   required="">

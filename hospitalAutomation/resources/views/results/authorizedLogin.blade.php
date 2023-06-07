@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,6 @@
     <link rel="stylesheet" href="{{url('css/userlogin/login.css')}}">
 </head>
 <body>
-
 <div class="login-box">
 
     <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
@@ -21,8 +21,7 @@
             </ul>
         </div>
     @endif
-
-    <form action="{{route('login')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
+    <form action="{{route('authorizedLogin')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
         @csrf
         <div class="user-box">
             <input type="text" name="tc_identity" maxlength="11"   required="">
@@ -36,12 +35,11 @@
 
         <button type="submit" style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
         border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;"> Gönder </button>
-        <a href="register">
-            Kayıt Ol
-        </a>
+
+
+
 
     </form>
-
 
 
 </div>
