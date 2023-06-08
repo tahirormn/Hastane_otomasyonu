@@ -8,5 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Result extends Model
 {
     use HasFactory;
-    protected $table='Results';
+    protected $table='results';
+    protected $fillable=([
+        'tc_identity',
+        'sonuc_dosya'
+    ]);
+    public function patientinfo(){
+        return $this->hasOne(Patient::class);
+    }
+
 }

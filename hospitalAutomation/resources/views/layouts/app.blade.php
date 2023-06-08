@@ -23,9 +23,8 @@
             <li><a href="about">Hakkımızda</a></li>
             <li><a href="doctors">Hekimlerimiz</a></li>
             <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
-            <li><a href="#sonuçlar">Sonuçlar</a></li>
+            <li><a href="results">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
-            <li><a href="randevularim">Randevularım</a></li>
         </ul>
     </div>
     @yield('header')
@@ -35,4 +34,3 @@
 
 </body>
 </html>
-

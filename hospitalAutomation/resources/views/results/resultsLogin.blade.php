@@ -15,7 +15,9 @@
 
 <div class="login-box">
 
-    <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
+    <a href="/">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
+    </a>
 
     <h2>Giriş Yap</h2>
     @if (session('error'))
@@ -26,7 +28,7 @@
         </div>
     @endif
 
-    <form action="{{route('res')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
+    <form action="{{route('res')}}" method="post">
         @csrf
         <div class="user-box">
             <input type="text" name="tc_identity" maxlength="11"   required="">

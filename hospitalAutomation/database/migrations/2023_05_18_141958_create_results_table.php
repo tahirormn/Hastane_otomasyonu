@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('results', function (Blueprint $table) {
-            $table->id();
-            $table->integer('pat_id');
-            $table->string('result');
+            $table->id('res_id');
+            $table->unsignedBigInteger('tc_identity');
+            $table->string('sonuc_dosya');
             $table->timestamps();
         });
     }

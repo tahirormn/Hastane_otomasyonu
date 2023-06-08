@@ -53,14 +53,14 @@ Route::post('/login',[PatientController::class,'ekle'])->name('register');
 
 Route::post('/',[appointmentsController::class,'eklemek'])->name('appointment');
 
-Route::post('/authorizedLogin', [AuthorizedLoginController::class, 'yetkiliGiris'])->name('authorizedLogin');
-
+Route::post('/addResults', [AuthorizedLoginController::class, 'yetkiliGiris'])->name('authorizedLogin');
+Route::post('/resultLogin', [ResultController::class, 'ekle'])->name('addresult');
 
 Route::get('/randevularim',[appointmentsController::class,'show'])->name('update');
 Route::get('/randevularim/{id}',[appointmentsController::class,'edit'])->name('appointment.edit');
 Route::post('/update/{id}',[appointmentsController::class,'update'])->name('appointment.randevularım');
 Route::get('/delete/{id}',[appointmentsController::class, 'delete'])->name('delete');
-//Route::post('/appointment',[AppointmentController::class,'submitForm'])->name('login');
+
 
 Route::post('/appointment',[LoginController::class,'login'])->name('login');
 

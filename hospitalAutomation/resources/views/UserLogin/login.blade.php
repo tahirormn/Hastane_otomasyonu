@@ -10,19 +10,19 @@
 <body>
 
 <div class="login-box">
-
+    <a href="/">
     <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
-
+    </a>
     <h2>Giriş Yap</h2>
     @if (session('error'))
-        <div class="alert alert-error">
+        <div class="alert alert-error" style="color:darkred">
             <ul>
                 <li>{{session('error')}}</li>
             </ul>
         </div>
     @endif
 
-    <form action="{{route('login')}}" method="post"> <!-- action kısmı problem sebebiyle silindi-->
+    <form action="{{route('login')}}" method="post">
         @csrf
         <div class="user-box">
             <input type="text" name="tc_identity" maxlength="11"   required="">

@@ -10,8 +10,9 @@
 </head>
 <body>
 <div class="login-box">
-
-
+    <a href="/">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
+    </a>
     <h2>Randevu Al</h2>
     <form action="{{route("appointment")}}" method="post">
         @csrf

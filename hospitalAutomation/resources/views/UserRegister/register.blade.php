@@ -11,8 +11,17 @@
 <body>
 
 <div class="login-box">
-
+    <a href="/">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
+    </a>
     <h2>Kayıt Ol</h2>
+    @if (session('error'))
+        <div class="alert alert-error" style="color:darkred">
+            <ul>
+                <li>{{session('error')}}</li>
+            </ul>
+        </div>
+    @endif
     <div style="background-color: #b65b2a">
         @foreach($errors->all() as $error)
             <li>{{$error}}</li>

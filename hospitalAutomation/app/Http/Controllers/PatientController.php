@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Patient;
+use Illuminate\Support\Facades\DB;
 
 class PatientController extends Controller
 {
@@ -19,6 +20,7 @@ class PatientController extends Controller
             'email'=>'required | email',
             'password'=>'required | min:6 |confirmed'
         ]);
+
         $name=$request->name;
         $surname=$request->surname;
         $tc_identity=$request->tc_identity;
@@ -29,6 +31,14 @@ class PatientController extends Controller
         $email=$request->email;
         $password=$request->password;
 
+        $datalar = DB::table('patients')->get();
+        foreach ($datalar as $data)
+        {
+            if ($data->tc_identity == $tc_identity or $data->tel_num == $tel_num
+                or $data->email == $email) {
+                return redirect()->back()->with('error','Girdiğiniz bilgilerde kayıtlı hasta zaten var.');
+            }
+        }
 
         Patient::create([
             'name'=>$name,
