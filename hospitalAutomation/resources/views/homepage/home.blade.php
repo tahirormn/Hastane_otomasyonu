@@ -20,9 +20,12 @@
         </div>
         <ul class="nav_links">
             <li><a href="/">Anasayfa</a></li>
-            <li><a href="about">Hakkımızda</a></li>
-            <li><a href="doctors">Hekimlerimiz</a></li>
-            <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
+            <li><a href="#">Hakkımızda</a>
+            <ul>
+                <li><a href="about">Bilgilendirme</a></li>
+                <li><a href="doctors">Hekimlerimiz</a></li>
+                <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
+            </ul>
             <li><a href="results">Sonuçlar</a></li>
             <li><a href="login">Randevu Al</a></li>
             <li><a href="randevularim">Randevularım</a></li>

@@ -49,7 +49,7 @@ section{
 /* ------HEADER-------- */
 
 header{
-    background: #000;
+    background: #24CAAC;
     border-bottom: 1px solid rgb(238, 238, 238, 0.801);
     position: relative; /*sayfa aşağı indikçe menü sabit kalır.*/
     width: 100%;
@@ -67,7 +67,6 @@ header{
 }
 .nav_links{
     display: flex;
-
 }
 .nav_links li a{
     margin-left: 15px;
@@ -75,9 +74,49 @@ header{
     padding: 5px 15px;
     border-radius: 5px;
     transition: all .3s ease-in-out;
+
+}
+ul.nav_links > li{
+    float: left;
+    position: relative;
+
+}
+ul.nav_links > li > a{
+    display: block;
+    font-size: 14px;
+    color:#fff;
+    padding:0 15px;
+    line-height:50px;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+ul.nav_links ul{
+    background: #106465;
+    width: 135px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
+
+}
+ul.nav_links ul li a{
+    display: block;
+    font-size: 14px;
+    color:#fff;
+    padding:7px 12px;
+
+}
+
+ul.nav_links > li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 30px;
+
 }
 .nav_links li a:hover{
-    background: #24CAAC;
+    background: #106465;
 }
 
 .logo h2 a{
