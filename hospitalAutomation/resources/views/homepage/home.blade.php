@@ -28,6 +28,7 @@
             </ul>
             <li><a href="login">Giriş Yap</a></li>
 
+            <li><a href="authLogin">Yetkili Giriş</a></li>
 
         </ul>
     </div>

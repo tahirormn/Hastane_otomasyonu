@@ -44,7 +44,7 @@ Route::get('/randevularim/{id}', function (){
     return view('appointment.edit');
 });
 
-Route::get('resultLogin', function (){
+Route::get('/authLogin', function (){
     return view('results.authorizedLogin');
 });
 

@@ -32,7 +32,7 @@
             <label>TC KİMLİK NUMARASI</label>
         </div>
         <div class="user-box">
-            <input type="file" name="sonuc_dosya"    required="">
+            <input type="file" name="sonuc_dosya" required="">
             <label>Tahlil</label>
         </div>
 
