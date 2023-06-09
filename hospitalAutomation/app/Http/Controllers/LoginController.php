@@ -16,12 +16,14 @@ class LoginController extends Controller{
         foreach ($datalar as $data)
         {
             if ($data->tc_identity == $tc_identity and $data->password == $password) {
-                return view('appointment.appointment');
+                return view('homepage.home_user');
             }
         }
         return redirect()->back()->with('error','Girdiğiniz bilgiler hatalı veya kayıtlı değilsiniz.');
-
-
+    }
+    public function info(Request $request){
+        $tc_identity=$request->tc_identity;
+        return $tc_identity;
     }
 
 

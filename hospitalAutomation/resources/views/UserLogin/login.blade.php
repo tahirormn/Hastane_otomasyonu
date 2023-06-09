@@ -36,8 +36,9 @@
 
         <button type="submit" style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;
         border: solid 7px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px;"> Gönder </button>
-        <a href="register">
-            Kayıt Ol
+        <a href="register"  style="background-color:rgb(20,30,48);color:white;width:50px; height:6px; font-size: 11px;
+        border: solid 5px rgb(20,30,48); cursor: pointer; outline: none; border-radius: 30px; margin-bottom: -13px">
+            Kaydol
         </a>
 
     </form>

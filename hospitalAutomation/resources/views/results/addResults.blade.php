@@ -24,7 +24,7 @@
             <li>{{$error}}</li>
         @endforeach
     </div>
-    <form action="{{route('addresult')}}" method="" enctype="multipart/form-data">
+    <form action="{{route('addresult')}}" method="post" enctype="multipart/form-data">
         @csrf
 
         <div class="user-box">

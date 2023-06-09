@@ -2,12 +2,13 @@
 
 <html>
 <head>
-    <title>Sonuclar</title>
+    <title>Sonuçlar</title>
 
 </head>
 <body>
 
     <p>result page</p>
+
 
 </body>
 

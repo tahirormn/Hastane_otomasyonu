@@ -11,6 +11,18 @@ Route::get('/', function (){
     return view('homepage.home');
 });
 
+Route::prefix("/")->group(function (){
+    Route::get("/about",function (){
+        return view('about');
+    });
+    Route::get("/doctors",function (){
+        return view('doctors');
+    });
+    Route::get('/boardOfDirector', function (){
+        return view('boardOfDirector');
+    });
+});
+
 Route::get('/login', function (){
     return view('UserLogin.login');
 });
@@ -18,17 +30,9 @@ Route::get('/login', function (){
 Route::get('/register', function () {
     return view('UserRegister.register');
 });
-
-Route::get('/about', function (){
-    return view('about');
+Route::get('/appointment', function () {
+    return view('appointment.appointment');
 });
-Route::get('/doctors', function (){
-    return view('doctors');
-});
-Route::get('/boardOfDirector', function (){
-    return view('boardOfDirector');
-});
-
 
 Route::get('/kayit', function (){
     return view('appointment.appointment');
@@ -44,7 +48,7 @@ Route::get('resultLogin', function (){
     return view('results.authorizedLogin');
 });
 
-Route::get('/results', [ResultsLoginController::class, 'resultLoginScreen']);
+Route::get('/results', [ResultsLoginController::class, 'index'])->name('sonuc');
 
 Route::post('/res', [ResultsLoginController::class, 'resultLogin'])->name('res');
 
@@ -62,7 +66,7 @@ Route::post('/update/{id}',[appointmentsController::class,'update'])->name('appo
 Route::get('/delete/{id}',[appointmentsController::class, 'delete'])->name('delete');
 
 
-Route::post('/appointment',[LoginController::class,'login'])->name('login');
+Route::post('/home_user',[LoginController::class,'login'])->name('login');
 
 
 

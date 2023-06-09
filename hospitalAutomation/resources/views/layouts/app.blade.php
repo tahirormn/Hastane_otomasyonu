@@ -16,7 +16,9 @@
 
     <div class="navbar">
         <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100" alt="logo">
+            <a href="/">
+                <img src="https://upload.wikimedia.org/wikipedia/tr/archive/9/9e/20200316220122%21Saglikbakanligi_logo.png" width="100" height="100"  alt="logo">
+            </a>
         </div>
         <ul class="nav_links">
             <li><a href="/">Anasayfa</a></li>

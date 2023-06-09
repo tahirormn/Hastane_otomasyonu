@@ -12,24 +12,20 @@ class ResultController extends Controller
             'tc_identity' => 'required | min:11',
             'sonuc_dosya' => 'required|mimes:doc,docx,xlx,csv,pdf|max:1024'
         ]);
-        $result = new Result;
-        $result->tc_identity = $request->tc_identity;
-
-
-        if ($request->hasfile('sonuc_dosya')) {
-            $dosya_ad = $this->str_slug($request->tc_identity) . '.' . $request->sonuc_dosya->getClientOriginalExtension();
-            $request->sonuc_dosya->move(public_path('uploads'), $dosya_ad);
-            $result->sonuc_dosya = 'uploads/' . $dosya_ad;
+        $tc_identity=$request->tc_identity;
+        $sonuc_dosya=$request->sonuc_dosya;
+        $data=new Result;
+        if($files=$request->file('sonuc_dosya')){
+            $name=$files->getClientOriginalName();
+            $files->move('uploads',$name);
+            $data->sonuc_dosya=$name;
         }
-        $result->save();
+        $data->save();
+        Result::create([
+            'tc_identity'=>$tc_identity,
+            'sonuc_dosya'=>$sonuc_dosya
+        ]);
 
-        return view('results.resultsLogin');
+        return view('results.resultLogin');
     }
-
-
-
-
-
-
-
 }

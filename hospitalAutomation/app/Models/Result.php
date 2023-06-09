@@ -13,8 +13,8 @@ class Result extends Model
         'tc_identity',
         'sonuc_dosya'
     ]);
-    public function patientinfo(){
+   /* public function patientinfo(){
         return $this->hasOne(Patient::class);
-    }
+    }*/
 
 }
