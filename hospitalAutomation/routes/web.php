@@ -70,5 +70,9 @@ Route::post('/home_user',[LoginController::class,'login'])->name('login');
 
 
 
+Route::post('/result',[TahlilController::class,'tahlil'])->name('result');
+
+
+
 
 

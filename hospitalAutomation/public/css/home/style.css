@@ -2,6 +2,7 @@ html{
     scroll-behavior:smooth;
     overflow-x: hidden;
 
+
 }
 
 *{
@@ -11,6 +12,7 @@ html{
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+
 
 }
 
@@ -22,6 +24,7 @@ body{
 
 img{
     width: 100%;
+
 
 }
 section{
@@ -69,10 +72,11 @@ header{
     display: flex;
 }
 .nav_links li a{
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
     color: #fff;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all .3s ease-in-out;
 
 }
@@ -80,25 +84,26 @@ ul.nav_links > li{
     float: left;
     position: relative;
 
-
 }
 ul.nav_links > li > a{
     display: block;
     font-size: 14px;
     color:#fff;
     padding:0 15px;
-    line-height:45px;
-    border-right: 1px solid rgba(0,0,0,.1);
+    line-height:50px;
+    border-right: 1px solid yellow;
+    border-left: 1px solid yellow;
 }
 ul.nav_links ul{
-    background: #106465;
-    width: 135px;
+    background: #f3d112;
+    width: 120px;
+    overflow: auto;
+    border-radius: 15px;
     position: absolute;
-    margin-top: 15px;
-    border-radius: 5px;
-    left: 0;
+    top: 45px;
+    left: 10px;
     opacity: 0;
-    transition: 250ms all;
+    transition: 200ms all;
     visibility: hidden;
 
 }
@@ -106,7 +111,9 @@ ul.nav_links ul li a{
     display: block;
     font-size: 14px;
     color:#fff;
-    padding:7px 12px;
+    padding:9px 4px;
+
+
 
 }
 
@@ -118,7 +125,7 @@ ul.nav_links > li:hover ul{
 
 }
 .nav_links li a:hover{
-    background: #106465;
+    background: #c52f00;
 }
 
 .logo h2 a{
@@ -200,7 +207,7 @@ ul.nav_links > li:hover ul{
 
     position: absolute;
     left: 47%;
-    top: 210%;
+    top: 400%;
 
 
 
@@ -264,6 +271,118 @@ ul.nav_links > li:hover ul{
     position: relative;
     margin-top: 500px;
     margin-bottom: 150px;
+}
+
+
+
+.yazılar p{
+    width: 50%;
+    position: relative;
+    left: 5px;
+    top: 160px;
+    text-align: left;
+    font-size:20px;
+    font-family: "sans-serif";
+    text-align: left;
+    color: #000;
+
+
+
+
+
+
+}
+
+.yazılar img{
+    position: relative;
+    left: 60%;
+    top:-190px;
+    height: 350px;
+    width: 700px;
+
+
+
+}
+
+.yazılar-2{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    position: relative;
+    top: 300px;
+}
+.yazılar-2 pre{
+    position: relative;
+    left: -70px;
+    top: -20px;
+    font-size: 27px;
+    font-family: "Courier New', Courier, monospace";
+    text-align: center;
+
+
+
+}
+
+.yazılar-2 img{
+    position: relative;
+    left: 0;
+    top:-650px;
+    height: 250px;
+    width: 100%;
+
+
+}
+.misyon h1{
+    border-style: dashed;
+    position: relative;
+    top: -500px;
+    width: 50%;
+    text-align: center;
+    background-image: linear-gradient(#32d1f5, white);
+    left: 100px;
+    color: #031ca1;
+
+
+
+
+}
+
+
+.yazılar-3 img{
+    position: relative;
+    left: 0%;
+    top:20px;
+    height: 350px;
+    width: 700px;
+
+
+
+}
+.degerler h1{
+    text-align: center;
+}
+.yazılar-3 p{
+
+    position: relative;
+    font-size: x-large;
+    font-family: "Roboto Light";
+    text-align: center;
+    top: 20px;
+    left: 1%;
+
+}
+.yazılar-3 img{
+    position: relative;
+    top: 90px;
+    left: 0%;
+    width: 100%;
+    height: 300px;
+}
+
+.kalp-1 p{
+    position: relative;
+    top: -100px;
+    left: 0%;
 }
 
 
