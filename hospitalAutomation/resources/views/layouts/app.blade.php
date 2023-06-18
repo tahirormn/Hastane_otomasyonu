@@ -28,9 +28,9 @@
                     <li><a href="doctors">Hekimlerimiz</a></li>
                     <li><a href="boardOfDirector">Yönetim Kurulu</a></li>
                 </ul>
-            <li><a href="results">Sonuçlar</a></li>
-            <li><a href="login">Randevu Al</a></li>
-            <li><a href="randevularim">Randevularım</a></li>
+            <li><a href="login">Giriş Yap</a></li>
+
+            <li><a href="authLogin">Yetkili Giriş</a></li>
 
         </ul>
     </div>

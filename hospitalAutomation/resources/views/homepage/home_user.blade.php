@@ -49,24 +49,79 @@
 <div class="arkaplan">
     <img src="../../../public/images/home/thumbs_b_c_139b2c0645c0aecf55e2982bc7a532c7.jpg" alt="logo">
 </div>
+<!--------------------------------YAZILAR VE RESİMLER------------------------------>
 
-<!-- ----------------------------HESAPLAYICILAR--------------------------->
+<div class="yazılar">
+    <p> 1997 yılı sonunda kurulan Malatya Hayat Sağlık Hizmetleri A.Ş’’nin ilk sağlık projesi Kışla Cadddesindeki Tıp Merkezi olarak hizmete başlayan Numune Hastanesidir. 1998 yılında açılışı yapılan kuruluşumuz, halkımızın en iyi sağlık hizmetine layık olduğu, koşulsuz hasta memnuniyeti felsefesi ve alanında Malatya’da ilk tıp merkezi olarak hizmete başlamıştır. 1998 yılından bu yana gösterilen yoğun ilgi ve gerçekleştirilen yatırımlar ile şu an itibari ile 6000 m2 nin üzerinde kapalı alana sahip, modern mimari yapısını en ileri tıp teknolojisi ile birleştiren bir sağlık kuruluşu olup, Numune Hastanesi olarak hizmet vermeye devam etmektedir. 24 saat hizmet veren merkezimizde son derece nezih, ferah ve geniş ortamlarda tüm branşlarda poliklinik hizmeti ve yataklı tedavi hizmeti yüksek standartlarda sunulmaktadır. İlkemiz:Tüm departmanlarımıza toplam kalite felsefesini benimseterek hem sağlıklı hizmeti hem de bu hizmetten faydalanan hasta ve hasta yakınlarının koşulsuz memnuniyetini sağlamaktır.
+
+        2000 yılında faaliyete başlayan Numune Fizik Tedavi ve Rehabilitasyon Merkezi, 1000m2’nin üzerinde alana sahip olarak bölgemizin en büyük özel fizik tedavi merkezi olarak hizmet vermektedir.
+
+        2001 yılında faaliyete başlayan Sıtmapınarı Numune Tıp Merkezi, 5000m2 kapalı alan üzerinde hastane dönüşüm sürecindedir.</p>
 
 
-<div class="bkeh">
-    <img src="images/home/h3.jpg" alt="logo">
-    <a href="https://www.sevgihastanesi.com.tr/beden-kitle-indeksi"> Beden-Kitle-İndeksi hesaplama</a>
+
+    <img src="https://shgmshpdb.saglik.gov.tr/Resim/65583/0/180420221355214142782jpg.png" alt="resim 1">
+
+
+    <div class="yazılar-2">
+
+        <pre>
+             Misyonumuz
+             *Sağlık hizmetinde mükemmelliğe ulaşmak.
+             *Bölgemiizdeki̇ sağlık standartlarını iyileştirmek.
+             *Doktorlarımıza hastaların ihtiyaç ve beklentilerine en iyi şekilde karşılık verebilecekleri ortamı sunmak.
+             *Personelimize sürekli eğitim verilmesini sağlamak.
+             *Hastalarımıza ölçülebilir yararlar sağlamak.
+
+             Vizyonumuz
+             * Bölgemizde en iyi sağlık sistemine sahip olmak ve öyle tanınmak.
+
+        </pre>
+        <img src="https://www.sevgihastanesi.com.tr/public/detay_resimler/1551274631_misyon.jpg" alt="resim 2">
+    </div>
+
+    <div class="misyon">
+        <h1>MİSYON VE VİZYON</h1>
+    </div>
+
+
+
 </div>
 
-<div class="boy">
-    <img src="images/home/h4.jpg" alt="logo">
-    <a href="https://www.sevgihastanesi.com.tr/boy-hesaplama"> Boy Hesaplama</a>
+<div class="degerler">
+    <h1>DEĞERLERİMİZ</h1>
 </div>
 
-<div class="Aşı">
-    <img src="images/home/h2.jpg" alt="logo">
-    <a href="https://www.sevgihastanesi.com.tr/asi-takvimi"> Aşı Takvimi</a>
+<div class="yazılar-3">
+
+    <p>
+
+        1) Ülkemizin geleceğinden sorumluyuz. <br>
+        2) İşimiz önemlidir,ihmal edilemez.<br>
+        3) Sağlıklı bir çalışma ortamının önemine inanırız.<br>
+        4) Hasta, hasta yakını ve çalışanlarımıza yakınız ihtiyaç ve sorunlarına en uygun çözümleri sunarız.<br>
+        5) Karar alma sürecinde katılımcılık,şeffaflık ve eşitliği esas alırız.<br>
+        6) Kararlarımızı açık ve dürüst bir iletişim ile paylaşırız.<br>
+        7) Geri bildirim ve özeleştiriye önem verir,gelişim fırsatları yaratırız.<br>
+        8) Hizmet sürecimizin değeri,başarısı ve etkinliği katılımcığımızla ölçülür.<br>
+        9) Çalışanları suçlamaz,süreçleri ve sistemi sorgularız.<br>
+        10) Konuları yasalar çerçevesinde ,ön yargısız,koşulsuz ve iyi niyetle değerlendiririz.<br>
+        11) Kurumumuzu her yönüyle tanır,konulara içinde bulunduğu çevre ile birlikte bütüncül yaklaşırız.<br>
+        12) Tüm gücümüzle çalışır zoru başarmaktan gurur ve heyecan duyarız.<br>
+        13) Farklılıkları anlar ve saygı duyarız.<br>
+        14) Birbirimizin Bilgi ve becerilerine güvenir,hep birlikte çalışırız.<br>
+        15) Birbirimize değer verir,birlikte başarmaya inanırız.<br>
+    </p>
+    <img src="https://www.sevgihastanesi.com.tr/public/detay_resimler/1576869751_bggenel22.jpg" alt="resim 3">
+
 </div>
+</div>
+
+
+
+
+
+
 
 <!-- ---------------------------- SOSYAL MEDYA İKONLARI ------------------->
 
@@ -78,7 +133,3 @@
         <li><a href="#"><i class="fab fa-google"></i></a></li>
     </ul>
 </div>
-
-
-
-

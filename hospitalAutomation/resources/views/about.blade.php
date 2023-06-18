@@ -14,7 +14,7 @@
 @endsection
 @section('css')
     {{url('css/home/style.css')}}
-    @endsection
+@endsection
 
 
 @section('body')
@@ -68,7 +68,5 @@
 
     </body>
 </html>
-
-
 
 @endsection

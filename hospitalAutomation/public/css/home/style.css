@@ -101,10 +101,11 @@ ul.nav_links ul{
     border-radius: 15px;
     position: absolute;
     top: 45px;
-    left: 10px;
+    left: 3px;
     opacity: 0;
     transition: 200ms all;
     visibility: hidden;
+    margin-top: 20px;
 
 }
 ul.nav_links ul li a{
