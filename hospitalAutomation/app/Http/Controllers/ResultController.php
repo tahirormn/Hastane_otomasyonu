@@ -4,28 +4,32 @@ namespace App\Http\Controllers;
 
 use App\Models\Result;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 class ResultController extends Controller
 {
     public function ekle(Request $request)
     {
-        $request->validate([
-            'tc_identity' => 'required | min:11',
-            'sonuc_dosya' => 'required|mimes:doc,docx,xlx,csv,pdf|max:1024'
-        ]);
-        $tc_identity=$request->tc_identity;
-        $sonuc_dosya=$request->sonuc_dosya;
-        $data=new Result;
-        if($files=$request->file('sonuc_dosya')){
-            $name=$files->getClientOriginalName();
-            $files->move('uploads',$name);
-            $data->sonuc_dosya=$name;
-        }
-        $data->save();
+        $tc = $request->tc_identity;
+        $glukoz = $request->glukoz;
+        $kreatinin = $request->kreatinin;
+        $urikAsit = $request->urikAsit;
+        $alt = $request->alt;
+        $kolestrol = $request->kolestrol;
+
+
         Result::create([
-            'tc_identity'=>$tc_identity,
-            'sonuc_dosya'=>$sonuc_dosya
+            'tc_identity'=>$tc,
+            'glukoz' => $glukoz,
+            'kreatinin' => $kreatinin,
+            'urik_asit' => $urikAsit,
+            'ALT' => $alt,
+            'kolestrol' => $kolestrol
         ]);
 
-        return view('results.resultLogin');
+        return view('results.resultsLogin');
     }
+
+
+
 }

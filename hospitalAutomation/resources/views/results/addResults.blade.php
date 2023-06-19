@@ -32,9 +32,26 @@
             <label>TC KİMLİK NUMARASI</label>
         </div>
         <div class="user-box">
-            <input type="file" name="sonuc_dosya" required="">
-            <label>Tahlil</label>
+            <input type="text" name="glukoz" required="">
+            <label>Glukoz</label>
         </div>
+        <div class="user-box">
+            <input type="text" name="kreatinin" required="">
+            <label>Kreatinin</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="urikAsit" required="">
+            <label>Ürik Asit</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="alt" required="">
+            <label>ALT</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="kolestrol" required="">
+            <label>HDL - Kolestrol</label>
+        </div>
+
 
 
         <button type="submit" style="background-color:rgb(20,30,48);color:white;width:90px; height:35px; font-size: 16px;

@@ -11,7 +11,11 @@ class Result extends Model
     protected $table='results';
     protected $fillable=([
         'tc_identity',
-        'sonuc_dosya'
+        'glukoz',
+        'kreatinin',
+        'urik_asit',
+        'ALT',
+        'kolestrol',
     ]);
    /* public function patientinfo(){
         return $this->hasOne(Patient::class);

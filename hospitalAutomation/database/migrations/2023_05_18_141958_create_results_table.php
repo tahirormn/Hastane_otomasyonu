@@ -16,7 +16,11 @@ return new class extends Migration
         Schema::create('results', function (Blueprint $table) {
             $table->id('res_id');
             $table->unsignedBigInteger('tc_identity');
-            $table->string('sonuc_dosya');
+            $table->string('glukoz');
+            $table->string('kreatinin');
+            $table->string('urik_asit');
+            $table->string('ALT');
+            $table->string('kolestrol');
             $table->timestamps();
         });
     }
