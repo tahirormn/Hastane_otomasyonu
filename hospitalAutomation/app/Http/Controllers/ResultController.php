@@ -30,6 +30,11 @@ class ResultController extends Controller
         return view('results.resultsLogin');
     }
 
+    public function show(){
+        $result = Result::get();
+        return view('results.result',compact('result'));
+    }
+
 
 
 }

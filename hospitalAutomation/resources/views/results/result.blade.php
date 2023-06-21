@@ -8,10 +8,11 @@
     <body>
 
     <h1 style="text-align: center">Sonuçlar</h1>
-    <table class="table" border="2" align="center">
+    <table class="table" BGCOLOR="#24CAAC" border="2" ALIGN="center">
         <thead>
         <tr>
             <th scope="col">#</th>
+            <th scope="col">TC Kimlik</th>
             <th scope="col">Glukoz</th>
             <th scope="col">Kreatinin</th>
             <th scope="col">Ürik Asit</th>
@@ -20,18 +21,19 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($db_data as $db)
+        @foreach($result as $res)
             <tr>
-                <th scope="row">{{$db->glukoz}}</th>
-                <td>{{$db->kreatinin}}</td>
-                <td>{{$db->urikAsit}}</td>
-                <td>{{$db->alt}}</td>
-                <td>{{$db->kolestrol}}</td>
+                <th scope="row">{{$res->res_id}}</th>
+                <td>{{$res->tc_identity}}</td>
+                <td>{{$res->glukoz}}</td>
+                <td>{{$res->kreatinin}}</td>
+                <td>{{$res->urik_asit}}</td>
+                <td>{{$res->ALT}}</td>
+                <td>{{$res->kolestrol}}</td>
             </tr>
         @endforeach
         </tbody>
     </table>
-
 
 
 
